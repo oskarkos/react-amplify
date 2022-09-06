@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Amplify, API, graphqlOperation } from "aws-amplify";
 import { createTodo } from "./graphql/mutations";
@@ -54,7 +53,7 @@ function App({ signOut, user }: any) {
 
   return (
     <>
-      <div className="Container">
+      <div className="container">
         <h2>Amplify Todos</h2>
         <input
           onChange={(event) => setInput("name", event.target.value)}
